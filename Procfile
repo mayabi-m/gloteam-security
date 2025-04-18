@@ -1,1 +1,1 @@
-web:gunicorn gloteam.wsgi:application --log-file -
+web: gunicorn gloteam.wsgi:application --log-file -
