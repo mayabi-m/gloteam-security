@@ -1,1 +1,1 @@
-web:gunicorn --config gunicorn.conf.py gloteam.wsgi
+web:gunicorn gloteam.wsgi --log-file -
