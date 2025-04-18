@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}
+{% include 'navbar-2.html'%}
+    <div class="container-fluid mb-5 py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 px-0">
+                <img width="100%" class="img-fluid" src="{% static 'img/about.jpg' %}" alt="Image">
+            </div>
+            <div class="col-lg-6 py-5 py-lg-0 px-3 px-lg-5">
+                <h5 class="text-primary mb-3">About Us</h5>
+                <h1 class="mb-4">15 Years Experience</h1>
+                <p>Gloteam Agencies Ltd is a premier security provider offering customized protective services, logistics, and training to various sectors. We cater to defense, energy, and financial industries as well as high-profile clients and international organizations in high-risk environments. Founded in 2019, we proudly serve within Nairobi County.</p>
+                <div class="row py-2">
+                    <div class="col-sm-6">
+                        <i class="flaticon-approved display-3 text-primary"></i>
+                        <h5 class="mt-2">Govt Approved</h5>
+                        <p>Gloteam Agencies Ltd is fully licensed and compliant with all government regulations. Our operations meet the highest industry standards, ensuring trusted and legally recognized security services.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="flaticon-medal display-3 text-primary"></i>
+                        <h5 class="mt-2">Award Winning</h5>
+                        <p>Recognized for excellence in service delivery, Gloteam Agencies Ltd has earned accolades within the security industry. Our commitment to professionalism, reliability, and client satisfaction sets us apart as a trusted security partner.</p>
+                    </div>
+                </div>
+                <a href="" class="btn btn-lg px-4 btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+   {%endblock%}
+
+
+    
