@@ -1,29 +1,85 @@
-
 <!-- Navbar Start -->
-    <div class="container-fluid p-0 nav-bar">
-            <nav class="navbar navbar-expand-lg bg-none navbar-dark py-0">
-                <a href="" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">GLOTEAM</span>AGENCIES</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav m-auto py-4">
-                        <a href="{% url 'main:home' %}" class="nav-item nav-link active">Home</a>
-                        <a href="{% url 'main:about' %}" class="nav-item nav-link active">About</a>
-                        <a href="{%url 'main:service' %}" class="nav-item nav-link active">Services</a>
-                        <a href="{% url 'main:guard' %}" class="nav-item nav-link active">Guards</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu text-capitalize">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
-                            </div>
+<div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #1a2b47;">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <h1 class="m-0 font-weight-bold"><span style="color: #f5a623;">GLO</span><span style="color: #ffffff;">TEAM</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav py-0">
+                    <a href="{% url 'main:home' %}" class="nav-item nav-link px-3 {% if request.resolver_match.url_name == 'home' %}active{% endif %}" style="font-weight: 500; letter-spacing: 0.5px; transition: all 0.3s;">Home</a>
+                    <a href="{% url 'main:about' %}" class="nav-item nav-link px-3 {% if request.resolver_match.url_name == 'about' %}active{% endif %}" style="font-weight: 500; letter-spacing: 0.5px; transition: all 0.3s;">About</a>
+                    <a href="{% url 'main:service' %}" class="nav-item nav-link px-3 {% if request.resolver_match.url_name == 'service' %}active{% endif %}" style="font-weight: 500; letter-spacing: 0.5px; transition: all 0.3s;">Services</a>
+                    <a href="{% url 'main:guard' %}" class="nav-item nav-link px-3 {% if request.resolver_match.url_name == 'guard' %}active{% endif %}" style="font-weight: 500; letter-spacing: 0.5px; transition: all 0.3s;">Guards</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle px-3 {% if request.resolver_match.url_name == 'blog' or request.resolver_match.url_name == 'blog_detail' %}active{% endif %}" data-toggle="dropdown" style="font-weight: 500; letter-spacing: 0.5px; transition: all 0.3s;">Pages</a>
+                        <div class="dropdown-menu rounded-0 border-0 shadow" style="background-color: #1a2b47;">
+                            <a href="blog.html" class="dropdown-item py-2 px-4 {% if request.resolver_match.url_name == 'blog' %}active{% endif %}" style="color: #ffffff; transition: all 0.3s;">Blog Grid</a>
+                            <a href="single.html" class="dropdown-item py-2 px-4 {% if request.resolver_match.url_name == 'blog_detail' %}active{% endif %}" style="color: #ffffff; transition: all 0.3s;">Blog Detail</a>
                         </div>
-                        <a href="{% url 'main:contact' %}" class="nav-item nav-link">Contact</a>
                     </div>
+                    <a href="{% url 'main:contact' %}" class="nav-item nav-link px-3 {% if request.resolver_match.url_name == 'contact' %}active{% endif %}" style="font-weight: 500; letter-spacing: 0.5px; transition: all 0.3s;">Contact</a>
+                    
                 </div>
-            </nav>
+            </div>
         </div>
-        <!-- Navbar End -->
+    </nav>
+</div>
+<!-- Navbar End -->
+
+<style>
+/* Add these styles to your CSS file */
+.nav-bar {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item .nav-link {
+    color: #ffffff !important;
+    position: relative;
+}
+
+.nav-item .nav-link:hover {
+    color: #f5a623 !important;
+}
+
+.nav-item .nav-link.active {
+    color: #f5a623 !important;
+}
+
+.nav-item .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #f5a623;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+
+.nav-item .nav-link:hover:after,
+.nav-item .nav-link.active:after {
+    width: 70%;
+}
+
+.dropdown-item:hover {
+    background-color: #2a3b57 !important;
+    color: #f5a623 !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding: 15px;
+        background-color: #1a2b47;
+    }
+    
+    .nav-item .nav-link {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+</style>

@@ -9,5 +9,6 @@ urlpatterns = [
     path('guard/', views.guard, name="guard"),
     path('blog/', views.blog, name="blog"),
     path('single/', views.single, name="single"),
-    path('contact/', views.contact, name="contact")
+    path('contact/', views.contact, name="contact"),
+    path('subscribe/', views.subscribe_newsletter, name="subscribe")
 ]

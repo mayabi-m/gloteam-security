@@ -1,7 +1,7 @@
 {%extends 'base.html'%}
 {% load static %}
 {%block content%}
-{%include 'navbar.html'%}
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
         <div id="blog-carousel" class="carousel slide" data-ride="carousel">
@@ -105,90 +105,7 @@
     <!-- About End -->
 
 
-    <!-- Services Start -->
-    <div class="container pt-5">
-        <div class="d-flex flex-column text-center mb-5">
-            <h5 class="text-primary mb-3">Our Services</h5>
-            <h1 class="m-0">Premium Security Services</h1>
-        </div>
-        <div class="row pb-3">
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="{% static 'img/service-1.jpg' %}" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Office Security</h6>
-                    </div>
-                    <div class="card-footer">
-                        We provide tailored office security solutions to safeguard your workplace, employees, and assets. Our trained security personnel and advanced surveillance systems ensure a safe and secure business environment, minimizing risks and unauthorized access.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="{% static 'img/service-2.jpg' %}" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-home font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Home Security</h6>
-                    </div>
-                    <div class="card-footer">
-                        Protect your home with our comprehensive security services, including surveillance systems, alarm monitoring, and access control. We offer personalized solutions to keep your family and property safe, providing peace of mind 24/7.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="{% static 'img/service-3.jpg'%}" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-factory font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Industry Security</h6>
-                    </div>
-                    <div class="card-footer">Our industry security services are designed to protect critical infrastructure, warehouses, and manufacturing plants. We provide comprehensive solutions, including on-site security personnel, surveillance systems, and access control, ensuring the safety of your assets and operations at all times.
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="{% static 'img/service-4.jpg'%}" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-transportation font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Transport Security</h6>
-                    </div>
-                    <div class="card-footer">
-                        We provide reliable transport security services to safeguard your cargo and vehicles throughout transit. Our trained security personnel, along with advanced tracking and surveillance technologies, ensure safe and secure transportation, minimizing risks and preventing theft.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="{% static 'img/service-5.jpg' %}" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Objects Security</h6>
-                    </div>
-                    <div class="card-footer">
-                        We specialize in securing valuable objects, from sensitive equipment to high-value assets. Our tailored solutions include surveillance, access control, and protection services to ensure the safety of your items, whether on-site or during transit.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="{% static 'img/service-6.jpg'%}" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Private Security</h6>
-                    </div>
-                    <div class="card-footer">
-                        Our private security services offer discreet and effective protection for individuals, families, and high-profile clients. We provide personal bodyguards, surveillance, and secure transport solutions, ensuring safety in any situation with a focus on confidentiality and professionalism.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-
-
+   
     
     <div class="container-fluid bg-primary my-5 py-5 text-center">
         <div class="row pt-5">
@@ -296,100 +213,32 @@
     <div class="container-fluid bg-primary my-5 py-5 text-center">
         <h1 class="text-white font-weight-bold mt-5 mb-3">Subscribe Our Newsletter</h1>
         <p class="text-white mb-4">Subscribe and get Our latest article in your inbox</p>
-        <form class="form-inline justify-content-center mb-5">
+        <form class="form-inline justify-content-center mb-5" action="{% url 'main:subscribe' %}" method="post">
+            {% csrf_token %}
             <div class="input-group">
-                <input type="text" class="form-control-lg" placeholder="Your Email">
+                <input type="email" class="form-control-lg" placeholder="Your Email" name="email" required>
                 <div class="input-group-append">
                     <button class="btn btn-secondary" type="submit">Subscribe</button>
                 </div>
+                
             </div>
         </form>
+       {% if messages %}
+    <div class="container mt-3">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+
     </div>
     <!-- Subscribe End -->
 
 
-    <!-- Team Start -->
-    <div class="container pt-5 pb-3">
-        <div class="d-flex flex-column text-center mb-5">
-            <h5 class="text-primary mb-3">Security Officers</h5>
-            <h1 class="m-0">Meet Our Security Officers</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="row mb-2 align-items-center">
-                    <div class="col-6 text-right">
-                        <h6>Officer Name</h6>
-                        <h6 class="text-muted font-weight-normal text-capitalize mb-2">Designation</h6>
-                        <p>Ipsum tempor tempor dolor no est diam duo dolore, dolor eos dolor amet erat clita amet.</p>
-                        <div class="d-flex justify-content-end">
-                            <a href=""><i class="fab fa-twitter mr-3"></i></a>
-                            <a href=""><i class="fab fa-facebook-f mr-3"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in mr-3"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <img class="img-thumbnail p-3" src="{% static 'img/team-1.jpg' %}" alt="Image">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="row mb-2 align-items-center">
-                    <div class="col-6">
-                        <img class="img-thumbnail p-3" src="{% static 'img/team-2.jpg'%}" alt="Image">
-                    </div>
-                    <div class="col-6 text-left">
-                        <h6>Officer Name</h6>
-                        <h6 class="text-muted font-weight-normal text-capitalize mb-2">Designation</h6>
-                        <p>Ipsum tempor tempor dolor no est diam duo dolore, dolor eos dolor amet erat clita amet.</p>
-                        <div class="d-flex justify-content-start">
-                            <a href=""><i class="fab fa-twitter mr-3"></i></a>
-                            <a href=""><i class="fab fa-facebook-f mr-3"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in mr-3"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="row mb-2 align-items-center">
-                    <div class="col-6 text-right">
-                        <h6>Officer Name</h6>
-                        <h6 class="text-muted font-weight-normal text-capitalize mb-2">Designation</h6>
-                        <p>Ipsum tempor tempor dolor no est diam duo dolore, dolor eos dolor amet erat clita amet.</p>
-                        <div class="d-flex justify-content-end">
-                            <a href=""><i class="fab fa-twitter mr-3"></i></a>
-                            <a href=""><i class="fab fa-facebook-f mr-3"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in mr-3"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <img class="img-thumbnail p-3" src="{% static 'img/team-3.jpg'%}" alt="Image">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="row mb-2 align-items-center">
-                    <div class="col-6">
-                        <img class="img-thumbnail p-3" src="{% static 'img/team-4.jpg'%}" alt="Image">
-                    </div>
-                    <div class="col-6 text-left">
-                        <h6>Officer Name</h6>
-                        <h6 class="text-muted font-weight-normal text-capitalize mb-2">Designation</h6>
-                        <p>Ipsum tempor tempor dolor no est diam duo dolore, dolor eos dolor amet erat clita amet.</p>
-                        <div class="d-flex justify-content-start">
-                            <a href=""><i class="fab fa-twitter mr-3"></i></a>
-                            <a href=""><i class="fab fa-facebook-f mr-3"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in mr-3"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
 
     <!-- Testimonial Start -->
